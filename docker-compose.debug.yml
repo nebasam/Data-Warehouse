@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  datawarehouse:
-    image: datawarehouse
-    build:
-      context: .
-      dockerfile: ./Dockerfile

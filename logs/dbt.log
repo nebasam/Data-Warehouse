@@ -1072,3 +1072,402 @@ Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
   
 2021-09-26 15:57:05.692021 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7a0faabd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7a0dd7d700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7a0de84100>]}
 2021-09-26 15:57:05.692439 (MainThread): Flushing usage events
+2021-09-27 03:38:34.263925 (MainThread): Running with dbt=0.20.2
+2021-09-27 03:38:36.282775 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='/home/neba/.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, models=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2021-09-27 03:38:36.536092 (MainThread): Tracking: tracking
+2021-09-27 03:38:36.659229 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faed08a66d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faed412cc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faed090d9a0>]}
+2021-09-27 03:38:36.905703 (MainThread): Partial parsing not enabled
+2021-09-27 03:38:39.478868 (MainThread): Parsing macros/adapters.sql
+2021-09-27 03:38:39.609237 (MainThread): Parsing macros/catalog.sql
+2021-09-27 03:38:39.621944 (MainThread): Parsing macros/relations.sql
+2021-09-27 03:38:39.628915 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-09-27 03:38:39.632287 (MainThread): Parsing macros/core.sql
+2021-09-27 03:38:39.638633 (MainThread): Parsing macros/adapters/common.sql
+2021-09-27 03:38:39.696202 (MainThread): Parsing macros/materializations/test.sql
+2021-09-27 03:38:39.704604 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-27 03:38:39.716827 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-27 03:38:39.779196 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-27 03:38:39.782398 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-27 03:38:39.802030 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-27 03:38:39.814962 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-27 03:38:39.831546 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-27 03:38:39.850098 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-27 03:38:39.877487 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-27 03:38:39.923966 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-27 03:38:40.048034 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-27 03:38:40.079671 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-27 03:38:40.082491 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-27 03:38:40.084743 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-27 03:38:40.086204 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-27 03:38:40.088040 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-27 03:38:40.089050 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-27 03:38:40.091039 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-27 03:38:40.093136 (MainThread): Parsing macros/etc/query.sql
+2021-09-27 03:38:40.094280 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-27 03:38:40.096126 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-27 03:38:40.328105 (MainThread): Acquiring new postgres connection "model.my_new_project.my_first_dbt_model".
+2021-09-27 03:38:40.341317 (MainThread): Acquiring new postgres connection "model.my_new_project.my_second_dbt_model".
+2021-09-27 03:38:40.409534 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-27 03:38:40.426611 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-27 03:38:40.430554 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-27 03:38:40.435094 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-27 03:38:40.548917 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1aabeb9e-27c4-4723-9565-3ce7dfc4b073', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faed088b0a0>]}
+2021-09-27 03:38:40.658564 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-09-27 03:38:40.660567 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1aabeb9e-27c4-4723-9565-3ce7dfc4b073', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faed088b3a0>]}
+2021-09-27 03:38:40.661626 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-09-27 03:38:40.667643 (MainThread): 
+2021-09-27 03:38:40.669020 (MainThread): Acquiring new postgres connection "master".
+2021-09-27 03:38:40.672674 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_tech_stack".
+2021-09-27 03:38:40.694933 (ThreadPoolExecutor-0_0): Using postgres connection "list_tech_stack".
+2021-09-27 03:38:40.695121 (ThreadPoolExecutor-0_0): On list_tech_stack: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "connection_name": "list_tech_stack"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-09-27 03:38:40.695295 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-27 03:38:41.080323 (ThreadPoolExecutor-0_0): SQL status: SELECT 6 in 0.38 seconds
+2021-09-27 03:38:41.219421 (ThreadPoolExecutor-0_0): On list_tech_stack: Close
+2021-09-27 03:38:41.221005 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "create_tech_stack_dbt".
+2021-09-27 03:38:41.225303 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "create_tech_stack_dbt".
+2021-09-27 03:38:41.225600 (ThreadPoolExecutor-0_0): Creating schema ""tech_stack"."dbt""
+2021-09-27 03:38:41.241526 (ThreadPoolExecutor-0_0): Using postgres connection "create_tech_stack_dbt".
+2021-09-27 03:38:41.241741 (ThreadPoolExecutor-0_0): On create_tech_stack_dbt: BEGIN
+2021-09-27 03:38:41.241895 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state closed
+2021-09-27 03:38:41.341644 (ThreadPoolExecutor-0_0): SQL status: BEGIN in 0.10 seconds
+2021-09-27 03:38:41.342194 (ThreadPoolExecutor-0_0): Using postgres connection "create_tech_stack_dbt".
+2021-09-27 03:38:41.342586 (ThreadPoolExecutor-0_0): On create_tech_stack_dbt: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "connection_name": "create_tech_stack_dbt"} */
+create schema if not exists "dbt"
+2021-09-27 03:38:41.380504 (ThreadPoolExecutor-0_0): SQL status: CREATE SCHEMA in 0.04 seconds
+2021-09-27 03:38:41.386561 (ThreadPoolExecutor-0_0): On create_tech_stack_dbt: COMMIT
+2021-09-27 03:38:41.386950 (ThreadPoolExecutor-0_0): Using postgres connection "create_tech_stack_dbt".
+2021-09-27 03:38:41.387240 (ThreadPoolExecutor-0_0): On create_tech_stack_dbt: COMMIT
+2021-09-27 03:38:41.450330 (ThreadPoolExecutor-0_0): SQL status: COMMIT in 0.06 seconds
+2021-09-27 03:38:41.455832 (ThreadPoolExecutor-0_0): On create_tech_stack_dbt: Close
+2021-09-27 03:38:41.460357 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_tech_stack_dbt".
+2021-09-27 03:38:41.482166 (ThreadPoolExecutor-1_0): Using postgres connection "list_tech_stack_dbt".
+2021-09-27 03:38:41.482432 (ThreadPoolExecutor-1_0): On list_tech_stack_dbt: BEGIN
+2021-09-27 03:38:41.482639 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-09-27 03:38:41.494002 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.01 seconds
+2021-09-27 03:38:41.494235 (ThreadPoolExecutor-1_0): Using postgres connection "list_tech_stack_dbt".
+2021-09-27 03:38:41.494430 (ThreadPoolExecutor-1_0): On list_tech_stack_dbt: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "connection_name": "list_tech_stack_dbt"} */
+select
+      'tech_stack' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'tech_stack' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt'
+  
+2021-09-27 03:38:41.566534 (ThreadPoolExecutor-1_0): SQL status: SELECT 0 in 0.07 seconds
+2021-09-27 03:38:41.571331 (ThreadPoolExecutor-1_0): On list_tech_stack_dbt: ROLLBACK
+2021-09-27 03:38:41.572996 (ThreadPoolExecutor-1_0): On list_tech_stack_dbt: Close
+2021-09-27 03:38:41.601837 (MainThread): Using postgres connection "master".
+2021-09-27 03:38:41.602375 (MainThread): On master: BEGIN
+2021-09-27 03:38:41.602826 (MainThread): Opening a new connection, currently in state init
+2021-09-27 03:38:41.633066 (MainThread): SQL status: BEGIN in 0.03 seconds
+2021-09-27 03:38:41.633797 (MainThread): Using postgres connection "master".
+2021-09-27 03:38:41.637181 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2021-09-27 03:38:41.740852 (MainThread): SQL status: SELECT 0 in 0.10 seconds
+2021-09-27 03:38:41.741239 (MainThread): On master: ROLLBACK
+2021-09-27 03:38:41.741508 (MainThread): Using postgres connection "master".
+2021-09-27 03:38:41.741606 (MainThread): On master: BEGIN
+2021-09-27 03:38:41.741888 (MainThread): SQL status: BEGIN in 0.00 seconds
+2021-09-27 03:38:41.741999 (MainThread): On master: COMMIT
+2021-09-27 03:38:41.742072 (MainThread): Using postgres connection "master".
+2021-09-27 03:38:41.742144 (MainThread): On master: COMMIT
+2021-09-27 03:38:41.742313 (MainThread): SQL status: COMMIT in 0.00 seconds
+2021-09-27 03:38:41.742415 (MainThread): On master: Close
+2021-09-27 03:38:41.742826 (MainThread): 06:38:41 | Concurrency: 4 threads (target='dev')
+2021-09-27 03:38:41.742982 (MainThread): 06:38:41 | 
+2021-09-27 03:38:41.822499 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2021-09-27 03:38:41.822881 (Thread-1): 06:38:41 | 1 of 2 START table model dbt.my_first_dbt_model...................... [RUN]
+2021-09-27 03:38:41.823595 (Thread-1): Acquiring new postgres connection "model.my_new_project.my_first_dbt_model".
+2021-09-27 03:38:41.823763 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2021-09-27 03:38:41.826424 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2021-09-27 03:38:41.826788 (Thread-1): finished collecting timing info
+2021-09-27 03:38:41.860667 (Thread-1): Using postgres connection "model.my_new_project.my_first_dbt_model".
+2021-09-27 03:38:41.927527 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+drop table if exists "tech_stack"."dbt"."my_first_dbt_model__dbt_tmp" cascade
+2021-09-27 03:38:41.928098 (Thread-1): Opening a new connection, currently in state closed
+2021-09-27 03:38:42.009606 (Thread-1): SQL status: DROP TABLE in 0.08 seconds
+2021-09-27 03:38:42.065069 (Thread-1): Using postgres connection "model.my_new_project.my_first_dbt_model".
+2021-09-27 03:38:42.065509 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+drop table if exists "tech_stack"."dbt"."my_first_dbt_model__dbt_backup" cascade
+2021-09-27 03:38:42.066697 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2021-09-27 03:38:42.105769 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_first_dbt_model"
+2021-09-27 03:38:42.106238 (Thread-1): Using postgres connection "model.my_new_project.my_first_dbt_model".
+2021-09-27 03:38:42.106375 (Thread-1): On model.my_new_project.my_first_dbt_model: BEGIN
+2021-09-27 03:38:42.106827 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2021-09-27 03:38:42.107075 (Thread-1): Using postgres connection "model.my_new_project.my_first_dbt_model".
+2021-09-27 03:38:42.107259 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+
+
+  create  table "tech_stack"."dbt"."my_first_dbt_model__dbt_tmp"
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2021-09-27 03:38:42.671351 (Thread-1): SQL status: SELECT 2 in 0.56 seconds
+2021-09-27 03:38:42.702727 (Thread-1): Using postgres connection "model.my_new_project.my_first_dbt_model".
+2021-09-27 03:38:42.703277 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+alter table "tech_stack"."dbt"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+2021-09-27 03:38:42.707004 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2021-09-27 03:38:42.758763 (Thread-1): On model.my_new_project.my_first_dbt_model: COMMIT
+2021-09-27 03:38:42.759141 (Thread-1): Using postgres connection "model.my_new_project.my_first_dbt_model".
+2021-09-27 03:38:42.759290 (Thread-1): On model.my_new_project.my_first_dbt_model: COMMIT
+2021-09-27 03:38:42.828181 (Thread-1): SQL status: COMMIT in 0.07 seconds
+2021-09-27 03:38:42.873308 (Thread-1): Using postgres connection "model.my_new_project.my_first_dbt_model".
+2021-09-27 03:38:42.873742 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+drop table if exists "tech_stack"."dbt"."my_first_dbt_model__dbt_backup" cascade
+2021-09-27 03:38:42.874791 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2021-09-27 03:38:42.881011 (Thread-1): finished collecting timing info
+2021-09-27 03:38:42.881684 (Thread-1): On model.my_new_project.my_first_dbt_model: Close
+2021-09-27 03:38:42.884392 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1aabeb9e-27c4-4723-9565-3ce7dfc4b073', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faed2d76160>]}
+2021-09-27 03:38:42.886757 (Thread-1): 06:38:42 | 1 of 2 OK created table model dbt.my_first_dbt_model................. [SELECT 2 in 1.06s]
+2021-09-27 03:38:42.887414 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2021-09-27 03:38:42.890633 (Thread-3): Began running node model.my_new_project.my_second_dbt_model
+2021-09-27 03:38:42.891787 (Thread-3): 06:38:42 | 2 of 2 START view model dbt.my_second_dbt_model...................... [RUN]
+2021-09-27 03:38:42.896836 (Thread-3): Acquiring new postgres connection "model.my_new_project.my_second_dbt_model".
+2021-09-27 03:38:42.897486 (Thread-3): Compiling model.my_new_project.my_second_dbt_model
+2021-09-27 03:38:42.931988 (Thread-3): Writing injected SQL for node "model.my_new_project.my_second_dbt_model"
+2021-09-27 03:38:42.933370 (Thread-3): finished collecting timing info
+2021-09-27 03:38:42.990026 (Thread-3): Using postgres connection "model.my_new_project.my_second_dbt_model".
+2021-09-27 03:38:42.990252 (Thread-3): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+drop view if exists "tech_stack"."dbt"."my_second_dbt_model__dbt_tmp" cascade
+2021-09-27 03:38:42.990401 (Thread-3): Opening a new connection, currently in state init
+2021-09-27 03:38:42.996810 (Thread-3): SQL status: DROP VIEW in 0.01 seconds
+2021-09-27 03:38:43.018457 (Thread-3): Using postgres connection "model.my_new_project.my_second_dbt_model".
+2021-09-27 03:38:43.018632 (Thread-3): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+drop view if exists "tech_stack"."dbt"."my_second_dbt_model__dbt_backup" cascade
+2021-09-27 03:38:43.019029 (Thread-3): SQL status: DROP VIEW in 0.00 seconds
+2021-09-27 03:38:43.025860 (Thread-3): Writing runtime SQL for node "model.my_new_project.my_second_dbt_model"
+2021-09-27 03:38:43.026365 (Thread-3): Using postgres connection "model.my_new_project.my_second_dbt_model".
+2021-09-27 03:38:43.026530 (Thread-3): On model.my_new_project.my_second_dbt_model: BEGIN
+2021-09-27 03:38:43.026933 (Thread-3): SQL status: BEGIN in 0.00 seconds
+2021-09-27 03:38:43.027068 (Thread-3): Using postgres connection "model.my_new_project.my_second_dbt_model".
+2021-09-27 03:38:43.027144 (Thread-3): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+
+  create view "tech_stack"."dbt"."my_second_dbt_model__dbt_tmp" as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "tech_stack"."dbt"."my_first_dbt_model"
+where id = 1
+  );
+
+2021-09-27 03:38:43.340287 (Thread-3): SQL status: CREATE VIEW in 0.31 seconds
+2021-09-27 03:38:43.365231 (Thread-3): Using postgres connection "model.my_new_project.my_second_dbt_model".
+2021-09-27 03:38:43.365887 (Thread-3): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+alter table "tech_stack"."dbt"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+2021-09-27 03:38:43.367666 (Thread-3): SQL status: ALTER TABLE in 0.00 seconds
+2021-09-27 03:38:43.375578 (Thread-3): On model.my_new_project.my_second_dbt_model: COMMIT
+2021-09-27 03:38:43.376244 (Thread-3): Using postgres connection "model.my_new_project.my_second_dbt_model".
+2021-09-27 03:38:43.378064 (Thread-3): On model.my_new_project.my_second_dbt_model: COMMIT
+2021-09-27 03:38:43.618875 (Thread-3): SQL status: COMMIT in 0.24 seconds
+2021-09-27 03:38:43.624090 (Thread-3): Using postgres connection "model.my_new_project.my_second_dbt_model".
+2021-09-27 03:38:43.624398 (Thread-3): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.2", "profile_name": "default", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+drop view if exists "tech_stack"."dbt"."my_second_dbt_model__dbt_backup" cascade
+2021-09-27 03:38:43.629035 (Thread-3): SQL status: DROP VIEW in 0.00 seconds
+2021-09-27 03:38:43.631913 (Thread-3): finished collecting timing info
+2021-09-27 03:38:43.632247 (Thread-3): On model.my_new_project.my_second_dbt_model: Close
+2021-09-27 03:38:43.633091 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1aabeb9e-27c4-4723-9565-3ce7dfc4b073', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faed080e8e0>]}
+2021-09-27 03:38:43.634517 (Thread-3): 06:38:43 | 2 of 2 OK created view model dbt.my_second_dbt_model................. [CREATE VIEW in 0.74s]
+2021-09-27 03:38:43.634866 (Thread-3): Finished running node model.my_new_project.my_second_dbt_model
+2021-09-27 03:38:43.637528 (MainThread): Acquiring new postgres connection "master".
+2021-09-27 03:38:43.649683 (MainThread): Using postgres connection "master".
+2021-09-27 03:38:43.649883 (MainThread): On master: BEGIN
+2021-09-27 03:38:43.650036 (MainThread): Opening a new connection, currently in state closed
+2021-09-27 03:38:43.660517 (MainThread): SQL status: BEGIN in 0.01 seconds
+2021-09-27 03:38:43.660737 (MainThread): On master: COMMIT
+2021-09-27 03:38:43.660891 (MainThread): Using postgres connection "master".
+2021-09-27 03:38:43.661006 (MainThread): On master: COMMIT
+2021-09-27 03:38:43.661924 (MainThread): SQL status: COMMIT in 0.00 seconds
+2021-09-27 03:38:43.662144 (MainThread): On master: Close
+2021-09-27 03:38:43.666389 (MainThread): 06:38:43 | 
+2021-09-27 03:38:43.669983 (MainThread): 06:38:43 | Finished running 1 table model, 1 view model in 3.00s.
+2021-09-27 03:38:43.672741 (MainThread): Connection 'master' was properly closed.
+2021-09-27 03:38:43.672926 (MainThread): Connection 'create_tech_stack_dbt' was properly closed.
+2021-09-27 03:38:43.673044 (MainThread): Connection 'model.my_new_project.my_first_dbt_model' was properly closed.
+2021-09-27 03:38:43.673130 (MainThread): Connection 'model.my_new_project.my_second_dbt_model' was properly closed.
+2021-09-27 03:38:43.715935 (MainThread): 
+2021-09-27 03:38:43.733667 (MainThread): Completed successfully
+2021-09-27 03:38:43.734007 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2021-09-27 03:38:43.761805 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faed07e4700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faecc6dc8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faed0858520>]}
+2021-09-27 03:38:43.762192 (MainThread): Flushing usage events
+2021-09-27 05:52:08.876951 (MainThread): Running with dbt=0.20.2
+2021-09-27 05:52:09.539695 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='/home/neba/.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, models=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2021-09-27 05:52:09.564709 (MainThread): Tracking: tracking
+2021-09-27 05:52:09.583077 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe817810160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe81b02ed00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8177a8f40>]}
+2021-09-27 05:52:09.612111 (MainThread): Partial parsing not enabled
+2021-09-27 05:52:09.876480 (MainThread): Parsing macros/adapters.sql
+2021-09-27 05:52:09.951535 (MainThread): Parsing macros/catalog.sql
+2021-09-27 05:52:09.954044 (MainThread): Parsing macros/relations.sql
+2021-09-27 05:52:09.955531 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-09-27 05:52:09.957378 (MainThread): Parsing macros/core.sql
+2021-09-27 05:52:09.961325 (MainThread): Parsing macros/adapters/common.sql
+2021-09-27 05:52:10.011696 (MainThread): Parsing macros/materializations/test.sql
+2021-09-27 05:52:10.018805 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-27 05:52:10.029263 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-27 05:52:10.037989 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-27 05:52:10.039961 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-27 05:52:10.046369 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-27 05:52:10.051565 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-27 05:52:10.058568 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-27 05:52:10.073863 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-27 05:52:10.095497 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-27 05:52:10.097359 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-27 05:52:10.147922 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-27 05:52:10.167872 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-27 05:52:10.171378 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-27 05:52:10.173054 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-27 05:52:10.174456 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-27 05:52:10.176292 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-27 05:52:10.177339 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-27 05:52:10.179116 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-27 05:52:10.181329 (MainThread): Parsing macros/etc/query.sql
+2021-09-27 05:52:10.182659 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-27 05:52:10.184331 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-27 05:52:10.353074 (MainThread): Acquiring new postgres connection "model.my_new_project.station_metadata".
+2021-09-27 05:52:10.363523 (MainThread): Acquiring new postgres connection "model.my_new_project.station_summary".
+2021-09-27 05:52:10.367700 (MainThread): Acquiring new postgres connection "model.my_new_project.merged_station".
+2021-09-27 05:52:10.435035 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-27 05:52:10.437450 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-27 05:52:10.439941 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-27 05:52:10.442411 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-27 05:52:10.445071 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-27 05:52:10.447456 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-27 05:52:10.449832 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-27 05:52:10.452225 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-27 05:52:10.456011 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-09-27 05:52:10.456568 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8176d0430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8176d0460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe8176d0f70>]}
+2021-09-27 05:52:10.456859 (MainThread): Flushing usage events
+2021-09-27 05:52:12.598074 (MainThread): Connection 'model.my_new_project.merged_station' was properly closed.
+2021-09-27 05:52:12.599116 (MainThread): Encountered an error:
+2021-09-27 05:52:12.599566 (MainThread): Compilation Error in model merged_station (models/merged_station.sql)
+  Model 'model.my_new_project.merged_station' (models/merged_station.sql) depends on a node named 'stations_metadata' which was not found
+2021-09-27 05:52:12.632315 (MainThread): Traceback (most recent call last):
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/parser/manifest.py", line 182, in get_full_manifest
+    manifest = loader.load()
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/parser/manifest.py", line 352, in load
+    self.process_refs(self.root_project.project_name)
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/parser/manifest.py", line 712, in process_refs
+    _process_refs_for_node(self.manifest, current_project, node)
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/parser/manifest.py", line 1023, in _process_refs_for_node
+    invalid_ref_fail_unless_test(
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/parser/manifest.py", line 796, in invalid_ref_fail_unless_test
+    ref_target_not_found(
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/exceptions.py", line 575, in ref_target_not_found
+    raise_compiler_error(msg, model)
+  File "/home/neba/.conda/envs/doc/lib/python3.9/site-packages/dbt/exceptions.py", line 444, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model merged_station (models/merged_station.sql)
+  Model 'model.my_new_project.merged_station' (models/merged_station.sql) depends on a node named 'stations_metadata' which was not found
+
