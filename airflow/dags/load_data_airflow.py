@@ -10,7 +10,7 @@ from airflow.utils.dates import timedelta
 default_args = {
     'owner': '10Academy',
     'depends_on_past': True,
-    'start_date': datetime(2021, 9, 23),
+    'start_date': datetime(2021, 9, 24),
     'email': ['neba.samuel17@gmail.com'],
     'email_on_failure': True,
     'email_on_retry': True,
