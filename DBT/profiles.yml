@@ -2,7 +2,7 @@
 defaults:
   outputs:
     dev:
-      type: postgres
+      type: mysql
       server: localhost
       port: 3306
       schema: analytics
