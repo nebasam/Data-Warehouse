@@ -11,6 +11,7 @@ This project builds a scalable **data warehouse** tech-stack that will help to p
 - [ELT Pipeline](#elt-pipeline)
   - [load_data_airflow.py](#load_data_airflowpy)
   - [dbt_airflow.py](#dbt_airflowpy)
+  - [Built With](#built-with)
 - [License](#license)
 
 # Project Structure
@@ -39,6 +40,13 @@ ELT pipeline builder
 
 ## dbt_airflow.py
 Transforms table using sql files and automates using airflow
+
+## Built With
+
+* [MYSQL](https://www.mysql.com/)
+* [Apache Airflow](https://airflow.apache.org/)
+* [dbt](https://www.getdbt.com/)
+* [Redash](https://redash.io/)
 
 # License
 [MIT](https://github.com/nebasam/Data-Warehouse-using-MYSQL)
